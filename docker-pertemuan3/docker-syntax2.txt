@@ -1,0 +1,14 @@
+Build Golang App dengan Docker:
+docker build -t hello-world-golang:latest .
+
+docker run hello-world-golang
+
+
+For Ubuntu:
+docker run -it hw-golang bash
+
+For Alpine:
+docker run -it hw-golang sh
+
+With PORT: <host port>:<container port>
+docker run -it -p 9000:8000 simple-web

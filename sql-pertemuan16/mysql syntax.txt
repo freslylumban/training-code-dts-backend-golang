@@ -1,0 +1,12 @@
+show databases;
+create database pet;
+use pet;
+show tables;
+create table namatable('namakolom' type, 'namakolom' type);
+desc <nama tabel>;
+
+select * from pet; 
+select name, id from pet;
+insert into pet(name) values ('Jooo');
+update pet set nama='Haruka' where id=1;
+delete from pet where id=3;

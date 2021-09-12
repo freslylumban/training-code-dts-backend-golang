@@ -1,0 +1,9 @@
+docker-compose.yaml
+
+Docker Compose:
+docker compose up
+
+*nb: untuk folder
+    - docker-pertemuan6
+    - docker-pertemuan6-2
+    - docker-pertemuan6-3

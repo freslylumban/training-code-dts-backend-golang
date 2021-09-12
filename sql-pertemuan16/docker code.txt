@@ -1,0 +1,17 @@
+docker compose up
+
+docker ps
+docker ps -a
+
+docker volume ls
+docker volume rm <volume_name>
+
+docker exec -it mysql bash
+
+mysql -uroot -p
+
+docker stop <id-container>  -> stop docker
+docker rm <id-container>  -> hapus image docker
+
+docker inspect <id images> | grep Gateway
+
