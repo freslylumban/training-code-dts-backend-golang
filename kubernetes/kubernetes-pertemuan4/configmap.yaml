@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysql-config
+data:
+  MYSQL_ROOT_PASSWORD: k8s-is-ez
+  PODINFO_UI_MESSAGE: "Hello from the other side, from mysql"
+---
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: phpmyadmin-config
+data:
+  PMA_ARBITRARY: "1"

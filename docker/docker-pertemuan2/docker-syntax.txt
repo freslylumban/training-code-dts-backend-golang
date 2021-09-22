@@ -1,0 +1,50 @@
+https://hub.docker.com
+
+All Basic Docker:
+docker pull
+docker ps
+docker run
+docker exec
+docker stop
+docker start
+
+Pull:
+docker pull ubuntu  =>  ubuntu:20.04
+
+Images:
+docker images
+
+Run:
+docker run ubuntu
+docker run -it ubuntu bash
+
+Exec (mengeksekusi container yg sudah berjalan):
+docker exec -it mysql bash
+
+NB:
+docker run -p 10000:80 nginx
+
+See docker running:
+docker ps
+docker ps -a
+
+Stop container:
+docker stop <container id>
+
+Start container:
+docker start <container id>
+
+Delete container docker:
+docker rm <container id>
+
+Delete images docker:
+docker rmi <container id>
+
+docker run -d --name mysql-server -p 3306:3306 -e MYSQL_ROOT_PASSWORD=my-secret-pw mysql
+
+Share Volume (local:container) -> issue: nama folder berganti
+docker run -it -v /c/Users/Asus/cobadocker:/app ubuntu bash
+
+PR?
+Coba share volume mysql ke local
+ide:-> docker run -it /c/Users/Asus/coba/mysql:/var/lib/mysql mysql bash

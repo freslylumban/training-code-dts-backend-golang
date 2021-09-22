@@ -1,0 +1,25 @@
+kubectl get pod
+kubectl get service
+
+
+
+Install minikube
+
+minikube start
+minikube kubectl -- get pod -A
+
+
+
+kubectl apply -f object.yaml
+kubectl get pod
+
+kubectl delete pod <nama-pod>
+
+kubectl get service
+kubectl delete service <nama-service>
+kubectl delete -f <nama-service>
+
+minikube service myapp-service
+
+Stop Minikube:
+minikube stop

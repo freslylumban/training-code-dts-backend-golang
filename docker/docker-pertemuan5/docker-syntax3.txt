@@ -1,0 +1,12 @@
+Struktur penulisan Docker Compose
+
+docker-compose.yml
+docker-compose.yaml
+
+Docker Compose:
+docker compose up
+
+*nb: untuk folder
+    - docker-pertemuan5
+    - docker-pertemuan5-2
+    - docker-pertemuan5-3

@@ -1,0 +1,27 @@
+version: '3.1'
+services:
+  mysql-dp6:
+    image: mysql
+    restart: always
+    ports:
+    - 3307:3306
+    environment: 
+      MYSQL_ROOT_PASSWORD: myexamplepassword
+    networks:
+      - db
+  phpmyadmin-dp6:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 9000:80
+    environment: 
+      - PMA_ARBITRARY=1
+    networks:
+      - pma
+networks:
+  pma:
+    name: pma_network
+    driver: bridge
+  db:
+    name: db_network
+    driver: bridge

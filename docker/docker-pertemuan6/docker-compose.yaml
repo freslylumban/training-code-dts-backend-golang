@@ -1,0 +1,24 @@
+version: '3.9'
+services:
+  frontend:
+    image: nginx
+    networks:
+      - frontend
+  backend:
+    image: nginx
+    networks:
+      - frontend
+      - database
+  database:
+    image: mysql
+    environment: 
+      - MYSQL_ROOT_PASSWORD=my-secret-pw
+    networks: 
+      - database
+networks:
+  frontend:
+    name: frontend_network
+    driver: bridge
+  database:
+    name: database_network
+    driver: bridge

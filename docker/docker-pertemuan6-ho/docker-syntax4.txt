@@ -1,0 +1,5 @@
+docker network ls
+
+Akses container yg berjalan:
+docker exec -it <nama-container> sh
+
